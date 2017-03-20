@@ -32,7 +32,7 @@ public class TrainControllerImpl implements TrainController {
 		}
 		while (true) {
 			try {
-				timer.wait(500);
+				timer.wait(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
