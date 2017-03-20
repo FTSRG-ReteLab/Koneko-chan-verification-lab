@@ -31,12 +31,12 @@ public class TrainControllerImpl implements TrainController {
 			timer = new Timer();
 		}
 		while (true) {
+			followSpeed();
 			try {
 				timer.wait(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			followSpeed();
 		}
 	}
 
